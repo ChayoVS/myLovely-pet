@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/myLovely-pet/static/css/main.d1b05096.chunk.css",
+    "main.js": "/myLovely-pet/static/js/main.a59c0d94.chunk.js",
+    "main.js.map": "/myLovely-pet/static/js/main.a59c0d94.chunk.js.map",
+    "runtime-main.js": "/myLovely-pet/static/js/runtime-main.6f87c652.js",
+    "runtime-main.js.map": "/myLovely-pet/static/js/runtime-main.6f87c652.js.map",
+    "static/js/2.2bc1e90c.chunk.js": "/myLovely-pet/static/js/2.2bc1e90c.chunk.js",
+    "static/js/2.2bc1e90c.chunk.js.map": "/myLovely-pet/static/js/2.2bc1e90c.chunk.js.map",
+    "index.html": "/myLovely-pet/index.html",
+    "precache-manifest.6a099f27eeafefaae17661843aa819be.js": "/myLovely-pet/precache-manifest.6a099f27eeafefaae17661843aa819be.js",
+    "service-worker.js": "/myLovely-pet/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/myLovely-pet/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.2bc1e90c.chunk.js.LICENSE.txt": "/myLovely-pet/static/js/2.2bc1e90c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/myLovely-pet/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f87c652.js",
+    "static/js/2.2bc1e90c.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.a59c0d94.chunk.js"
+  ]
+}
