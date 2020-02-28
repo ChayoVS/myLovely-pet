@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
+import uuid from 'uuid/v4';
 
-
-const Formulario = () => {
+const Formulario = ({crearCita}) => {
 
     //Crear State de citas
     const [cita, actualizarCita] = useState ({
@@ -10,7 +10,9 @@ const Formulario = () => {
         fecha: '',
         hora:'',
         sintomas:''
-    })
+    });
+
+    const [error, actualizarError] = useState(false)
 
     //Función que se ejecuta cada que el usuario escribe en un input
     const actualizarState = e => {
@@ -23,11 +25,36 @@ const Formulario = () => {
     // Extraer los valores
     const {mascota, propietario, fecha, hora, sintomas} = cita;
 
+    //Cuando el usuario presiona agregar cita para enviar form
+    const submitCita = e => {
+        e.preventDefault();
+
+        // Validar
+        if(mascota.trim() === '' || propietario.trim() ==='' || fecha.trim() === '' || hora.trim() === '' || sintomas.trim() === ''){
+            actualizarError(true);
+            return;
+        } 
+        // Eliminar mensaje previo 
+        actualizarError(false)
+        // Asignar ID
+
+        cita.id = uuid();
+
+        // Crear la cita
+        crearCita(cita);
+
+        //Reiniciar el form
+    }
+
     return ( 
         <Fragment>
             <h2>Crear cita</h2>
 
-            <form>
+            { error ? <p className='alerta-error'>Todos los campos son obligatorios</p> : null}
+
+            <form
+                onSubmit={submitCita}
+            >
                 <label>Nombre Mascota</label>
                 <input
                     type="text"
